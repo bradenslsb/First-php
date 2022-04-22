@@ -199,10 +199,32 @@
         echo $grades[$_POST["student"]];
     ?>
     <br>
-
+    <br>
+    <!-- Functions -->
     <?php 
-        
+        function sayHi($userName, $age){
+            echo "Hello $userName, you're $age years old";
+        }
+
+        sayHi("Braden", 24); //simple function call
+        echo "<br>";
+        sayHi("Tom", 35);
+        echo "<br>";
+        sayHi("Jim", 22);
+        echo "<br>";
     ?>
-        
+    <!-- Return Statements -->
+    <?php 
+        function cube($num){
+            return $num*$num*$num;
+            // or $num^3
+            echo "Hello"; // this isn't going to be displayed after return
+        }
+
+        $cubeResult = cube(4);
+        echo $cubeResult;
+        echo "<br>";
+        echo cube(3);
+    ?>
   </body>
 </html>
