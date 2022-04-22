@@ -226,5 +226,14 @@
         echo "<br>";
         echo cube(3);
     ?>
+    <form action="First-php" method="get">
+        Phone Number: <input type="number" name="phoneNumber">
+    <input type="submit"> 
+
+    <?php 
+        echo "<br>";
+        echo "This is a phone number:";
+        echo $_GET["phoneNumber"];
+    ?>
   </body>
 </html>
