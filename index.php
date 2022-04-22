@@ -226,6 +226,7 @@
         echo "<br>";
         echo cube(3);
     ?>
+    <!-- Made a basic form with zero help -->
     <form action="First-php" method="get">
         Phone Number: <input type="number" name="phoneNumber">
     <input type="submit"> 
